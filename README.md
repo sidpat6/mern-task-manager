@@ -15,6 +15,9 @@ This is a simple Task Manager application built using the MERN stack.
 - Database: MongoDB
 - Authentication: JWT
 
+## Node Version
+This project was built and tested using: Nodejs v20.12.2
+
 ## How to Run the Project
 
 ### Backend Setup (Root Folder)
