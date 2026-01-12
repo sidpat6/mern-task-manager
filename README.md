@@ -16,7 +16,7 @@ This is a simple Task Manager application built using the MERN stack.
 - Authentication: JWT
 
 ## Node Version
-This project was built and tested using: Nodejs v20.12.2
+- This project was built and tested using: Nodejs v20.12.2
 
 ## How to Run the Project
 
