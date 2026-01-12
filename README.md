@@ -17,14 +17,13 @@ This is a simple Task Manager application built using the MERN stack.
 
 ## How to Run the Project
 
-### Backend
-1. Navigate to the backend folder
-2. Install dependencies:
+### Backend Setup (Root Folder)
+1. Install dependencies:
    npm install
-3. Create a `.env` file with:
+2. Create a `.env` file with:
    - MONGO_URI
    - JWT_SECRET
-4. Start the server:
+3. Start the server:
    npm start
 
 ### Frontend
