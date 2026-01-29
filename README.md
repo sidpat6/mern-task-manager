@@ -27,6 +27,10 @@ This is a simple Task Manager application built using the MERN stack.
 4. Start the server:
    npm start
 
+## Environment
+  - Node.js: v18.17.0
+  - npm: v9.x
+
 ### Frontend
 1. Navigate to the frontend folder
 2. Install dependencies:

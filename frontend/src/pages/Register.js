@@ -18,7 +18,6 @@ function Register() {
             alert(err.response?.data?.message || "Registration failed");
         }
     };
-    
     return (
     <div className="auth-container">
         <div className="auth-card">
@@ -35,4 +34,3 @@ function Register() {
     );
 }
 export default Register;
-

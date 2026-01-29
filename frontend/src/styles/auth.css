@@ -3,7 +3,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Register & Login Page */
+/* AUTH PAGES (LOGIN / REGISTER) */
 .auth-container{
     min-height: 100vh;
     display: flex;
@@ -37,7 +37,7 @@
 }
 .auth-card input:focus{border-color: black;}
 
-/* Button */
+/* Buttons */
 .auth-card button {
     width: 100%;
     padding: 10px;
@@ -63,98 +63,12 @@
 }
 .auth-card a:hover{color: red;}
 
-/* Dashboard Page */
-.dashboard{
-    min-height: 100vh;
-    padding: 40px;
-    background-color: rgb(204, 197, 197);
-}
-
-.dashboard-card{
-    background-color: white;
-    max-width: 650px;
-    font-size: 20px;
-    margin: auto;
-    padding: 35px;
-    border-radius: 8px;
-    box-shadow: 0 1px 5px black;
-    text-align: center;
-}
-
-.dashboard-card h2{
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    border-bottom: 2px solid black;
-}
-
-.dashboard-card form {
-    background-color: lightgray;
-    padding: 15px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid gray;
-}
-
-.dashboard-card form input{
-    background-color: whitesmoke;
-    padding: 3px;
-    font-size: 17px;
-    width: 100%;
-}
-
-.dashboard-card form button {
-    font-size: 18px;
-    margin-top: 10px;
-    padding: 8px 16px;
-}
-
-/* Tasks */
-.task-list{
-    padding: 0;
-    margin-top: 20px;
-}
-
-.task-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff3cd;
-    padding: 10px 12px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border-left: 5px solid blue;
-}
-
-.task-item span{
-    font-weight: bold;
-}
-
-.task-item span b{
-    padding: 3px 8px;
-    border-radius: 12px;
-    font-style: italic;
-    font-size: 15px;
-    background: #fff3cd;
-    color: darkorange;
-}
-
-.task-item.completed span b{
-    background: #d4edda;
-    color: #155724;
-}
-
-.task-actions{
-    display: flex;
-    gap: 25px;
-}
+/* Login Layout */
 .task-actions button {
     padding: 5px 8px;
     font-size: 13px;
 }
 
-/* Dashboard buttons */
 .refresh-btn, .logout-btn{
     margin-bottom: 15px;
     margin-top: 17px;
@@ -167,114 +81,51 @@
     font-weight: 600;
     width: 100%;
 }
-.refresh-btn:hover, .logout-btn:hover{background-color: darkred;}
 
-/* Links */
-.dashboard-card a {
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.dashboard-card a:hover {
-    text-decoration: underline;
-}
-
-/* Account Section Page */
-.account {
+.login-layout {
+    display: flex;
     min-height: 100vh;
-    padding: 40px;
-    background-color: rgb(204, 197, 197);
 }
 
-.account-card{
-    background-color: white;
-    max-width: 650px;
-    font-size: 20px;
-    margin: auto;
-    padding: 35px;
-    border-radius: 8px;
-    box-shadow: 0 1px 5px black;
-    text-align: center;
-}
-
-.account-card h2{
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 25px;
-    border-bottom: 2px solid black;
-}
-
-.account-card p{
-    font-size: 20px;
-    margin: 8px 0;
-}
-
-.account-card hr {
-    margin: 20px 0;
-    border: none;
-    border-top: 1px solid darkgray;
-}
-
-.account-card h3{
-    font-size: 25px;
-    margin-top: 25px;
-    margin-bottom: 14px;
-}
-
-.account-card form {
-    background-color: lightgray;
-    padding: 15px;
-    border-radius: 8px;
+.login-left {
+    flex: 1;
+    background: linear-gradient(120deg, #1e3c72, #2a5298);
+    color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
 
-.account-card form button {
+.login-left h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.login-left p {
     font-size: 18px;
-    margin-top: 10px;
-    padding: 8px 16px;
 }
 
-.account-card form input{
-    font-size: 17px;
-    margin-bottom: 5px;
-    width: 100%;
+.login-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
 }
 
-.account-card form button{
-    width: 100%;
-    padding: 10px;
-    font-size: 15px;
-    background: blue;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.account-card form button:hover{
-    background-color: green;
-}
-
-@media (max-width: 600px){
-    .dashboard{
+/* Responsive */
+@media (max-width: 600px) {
+    .auth-card {
         padding: 20px;
     }
 
-    .dashboard-card, .account-card{
-        padding: 20px;
-    }
-
-    .task-item {
+    .login-layout {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
     }
 
-    .task-actions {
-        width: 100%;
-        justify-content: space-between;
+    .login-left {
+        text-align: center;
     }
 }
